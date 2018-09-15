@@ -1,0 +1,9 @@
+<div class="instagram-feed js-instagram-feed">
+  {% for image in instagram_feed %}
+  <div class="instagram-feed__item">
+    <a href="{{ image.link }}" class="instagram-feed__link" target="_blank">
+      <img class="instagram-feed__image" src="{{ image.thumbnailSrc }}">
+    </a>
+  </div>
+  {% endfor %}
+</div>
